@@ -1,4 +1,9 @@
 package com.api.xclusive.repository;
 
-public interface ProductoRepo {
+import com.api.xclusive.entity.Producto;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductoRepo extends JpaRepository<Producto, Integer>
+{
+
 }

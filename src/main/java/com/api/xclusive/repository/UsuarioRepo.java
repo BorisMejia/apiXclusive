@@ -1,4 +1,9 @@
 package com.api.xclusive.repository;
 
-public interface UsuarioRepo {
+import com.api.xclusive.entity.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UsuarioRepo extends JpaRepository<Usuario, Integer>
+{
+    
 }
